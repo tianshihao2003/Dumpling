@@ -1,6 +1,7 @@
 ---
 id: moment-001
 author: 团子
+avatar: /assets/ziyuan/tx.webp
 pinned: true
 published: 2024-02-14
 tags: [生活, 第一条]

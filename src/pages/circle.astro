@@ -55,6 +55,12 @@ const description = i18n(I18nKey.circleSubtitle);
       <p class="loading-text">正在加载朋友圈数据...</p>
     </div>
 
+    <!-- 配置提示 -->
+    <div class="circle-notice" id="circle-config-notice" style="display:none;">
+      <span class="notice-icon"><img src="/assets/images/em/1000023899.gif" alt="" class="notice-icon-img" width="20" height="20" /></span>
+      <span class="notice-text">您还没有配置朋友圈数据源，请在 <code>src/config/circleConfig.ts</code> 中配置 <code>dataUrl</code></span>
+    </div>
+
     <!-- 错误状态 -->
     <div class="circle-error" id="circle-error" style="display:none;">
       <Icon name="material-symbols:error-outline" class="text-4xl text-red-400" />
@@ -169,6 +175,7 @@ const description = i18n(I18nKey.circleSubtitle);
     el = $("circle-loading"); if (el) el.style.display = "";
     el = $("circle-grid"); if (el) el.style.display = "none";
     el = $("circle-error"); if (el) el.style.display = "none";
+    el = $("circle-config-notice"); if (el) el.style.display = "none";
   }
 
   function showGrid() {
@@ -176,6 +183,7 @@ const description = i18n(I18nKey.circleSubtitle);
     el = $("circle-loading"); if (el) el.style.display = "none";
     el = $("circle-grid"); if (el) el.style.display = "";
     el = $("circle-error"); if (el) el.style.display = "none";
+    el = $("circle-config-notice"); if (el) el.style.display = "none";
   }
 
   function showError() {
@@ -183,6 +191,15 @@ const description = i18n(I18nKey.circleSubtitle);
     el = $("circle-loading"); if (el) el.style.display = "none";
     el = $("circle-grid"); if (el) el.style.display = "none";
     el = $("circle-error"); if (el) el.style.display = "";
+    el = $("circle-config-notice"); if (el) el.style.display = "none";
+  }
+
+  function showConfigNotice() {
+    var el;
+    el = $("circle-loading"); if (el) el.style.display = "none";
+    el = $("circle-grid"); if (el) el.style.display = "none";
+    el = $("circle-error"); if (el) el.style.display = "none";
+    el = $("circle-config-notice"); if (el) el.style.display = "";
   }
 
   function renderStats(data) {
@@ -216,6 +233,12 @@ const description = i18n(I18nKey.circleSubtitle);
 
   function fetchData() {
     showLoading();
+
+    // 检查是否为占位符 URL
+    if (!dataUrl || dataUrl.includes("example.com")) {
+      showConfigNotice();
+      return;
+    }
 
     if (window[CACHE_KEY] && window[CACHE_KEY].time > Date.now() - cacheTime) {
       onData(window[CACHE_KEY].data);

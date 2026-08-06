@@ -1,6 +1,7 @@
 ---
 id: moment-002
 author: 团子
+avatar: /assets/ziyuan/tx.webp
 pinned: false
 published: 2024-02-15
 tags: [技术, 编程]
