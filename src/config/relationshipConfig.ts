@@ -7,8 +7,8 @@ export const relationshipConfig: RelationshipConfig = {
 	name1: "饺子",
 	name2: "蛋糕",
 	// 双方头像（替换为你的头像）
-	avatar1: "/assets/images/avatar.webp",
-	avatar2: "/assets/images/avatar2.webp",
+	avatar1: "/assets/ziyuan/tsh.jpg",
+	avatar2: "/assets/ziyuan/cxy.jpg",
 	// 小组件标题
 	title: "我们在一起已经",
 };

@@ -314,6 +314,9 @@ export function getGuestbookErrorMessage(error: unknown): string {
 	if (error instanceof DOMException && error.name === "AbortError") return "";
 	if (error instanceof Error) {
 		const message = error.message;
+		if (/未配置|not configured/iu.test(message)) {
+			return "您还没有配置评论系统，请在 src/config/commentConfig.ts 中配置 Waline 服务地址";
+		}
 		if (/failed to fetch|networkerror|network request/iu.test(message)) {
 			return "无法连接到留言服务，请检查网络后重试";
 		}

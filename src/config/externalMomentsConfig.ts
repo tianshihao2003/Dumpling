@@ -11,7 +11,7 @@ export const externalMomentsConfig = {
 
 	// 默认作者信息
 	defaultAuthor: "饺子",
-	defaultAvatar: "/assets/images/avatar.webp",
+	defaultAvatar: "/assets/ziyuan/tx.webp",
 
 	// CloudFlare ImgBed 图床配置（用于说说图片上传）
 	imageBedUrl: import.meta.env.PUBLIC_IMAGEBED_URL || "",
