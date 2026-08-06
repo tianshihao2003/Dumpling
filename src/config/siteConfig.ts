@@ -7,7 +7,7 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "饺子主题",
+	title: "团子主题",
 
 	// 站点副标题
 	subtitle: "一个简洁美观的 Astro 博客主题",
@@ -24,7 +24,7 @@ export const siteConfig: SiteConfig = {
 		"博客",
 		"astro",
 		"主题",
-		"饺子",
+		"团子",
 		"个人博客",
 	],
 
@@ -66,7 +66,7 @@ export const siteConfig: SiteConfig = {
 			alt: "首页",
 		},
 		// 导航栏标题
-		title: "饺子主题",
+		title: "团子主题",
 		// 悬停时显示的互动文字
 		hoverTitle: "w(ﾟДﾟ)w 不要走！再看看嘛！",
 		// 导航栏是否占满屏幕宽度

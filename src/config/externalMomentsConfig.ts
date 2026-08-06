@@ -10,7 +10,7 @@ export const externalMomentsConfig = {
 	fileName: "moments.json",
 
 	// 默认作者信息
-	defaultAuthor: "饺子",
+	defaultAuthor: "团子",
 	defaultAvatar: "/assets/ziyuan/tx.webp",
 
 	// CloudFlare ImgBed 图床配置（用于说说图片上传）

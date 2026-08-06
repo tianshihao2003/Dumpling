@@ -8,7 +8,7 @@ interface Props {
 	adminNicknames?: string[];
 }
 
-let { serverURL, adminNicknames = ["饺子"] }: Props = $props();
+let { serverURL, adminNicknames = ["团子"] }: Props = $props();
 
 interface Comment {
 	objectId: number;

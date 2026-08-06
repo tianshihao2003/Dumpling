@@ -1,7 +1,7 @@
 ---
 title: Markdown 样式指南
 published: 2024-02-01
-description: 展示饺子主题中 Markdown 的各种排版样式。
+description: 展示团子主题中 Markdown 的各种排版样式。
 tags: [markdown, 演示]
 category: 博客指南
 lang: zh_CN
@@ -15,7 +15,7 @@ lang: zh_CN
 
 ```typescript
 function greet(name: string): string {
-  return `你好，${name}！欢迎来到饺子主题。`;
+  return `你好，${name}！欢迎来到团子主题。`;
 }
 ```
 

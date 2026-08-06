@@ -1,15 +1,15 @@
 ---
-title: 饺子主题快速上手指南
+title: 团子主题快速上手指南
 published: 2024-01-15
 updated: 2024-01-20
-description: 一份快速上手指南，帮助你搭建和自定义饺子博客主题。
+description: 一份快速上手指南，帮助你搭建和自定义团子博客主题。
 tags: [教程, 指南]
 category: 博客指南
 lang: zh_CN
 pinned: true
 ---
 
-欢迎使用 **饺子主题**！这是一个基于 Astro、Svelte 和 Tailwind CSS 构建的博客主题。
+欢迎使用 **团子主题**！这是一个基于 Astro、Svelte 和 Tailwind CSS 构建的博客主题。
 
 ## 快速开始
 

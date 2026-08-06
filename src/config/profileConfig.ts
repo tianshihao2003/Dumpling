@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	avatarOffWork: "",
 
 	// 名字
-	name: "饺子",
+	name: "团子",
 
 	// 首页展示名字（留空则使用 name）
 	displayName: "",
