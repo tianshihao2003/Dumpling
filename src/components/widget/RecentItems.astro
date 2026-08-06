@@ -106,7 +106,7 @@ const allItems = [
 			title: `${notebookNames[n.id.split("/")[0]] || n.id.split("/")[0]} · ${n.data.name || "未命名"}`,
 			date: n.data.date || new Date(),
 			url: `/life/notebooks/${n.id.replace(/\\/g, "/").split("/")[0]}/${n.id.split("/").pop()?.replace(/\.md$/, "") || ""}/`,
-			image: "https://re.tsh520.cn/zl/life-notebook.webp",
+			image: "",
 			id: n.id,
 		})),
 ];
@@ -114,7 +114,7 @@ const allItems = [
 const recentItems = allItems
 	.sort((a, b) => b.date.getTime() - a.date.getTime())
 	.slice(0, 10);
-const defaultImage = "https://re.0824.uk/zl/tx.webp";
+const defaultImage = "/assets/ziyuan/tx.webp";
 
 const typeLabel: Record<string, () => string> = {
 	post: () => i18n(I18nKey.recentPosts),

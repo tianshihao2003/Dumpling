@@ -11,8 +11,8 @@
  */
 (function() {
   var TOKEN_KEY = "gh_admin_token";
-  var OWNER = "tianshihao2003";
-  var REPO = "dumplingandcakeblog";
+  var OWNER = ""; // TODO: 设置为你的 GitHub 用户名
+  var REPO = ""; // TODO: 设置为你的仓库名
   var BRANCH = "main";
 
   function GitHubAPI(token) {
